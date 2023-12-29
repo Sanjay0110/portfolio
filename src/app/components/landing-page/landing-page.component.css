@@ -1,0 +1,39 @@
+/* landing-page.component.css */
+.full-viewport {
+    height:100vh;
+    width: 100vw;
+}
+
+
+.parent-right{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-style{
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button{
+    background-color: transparent;
+    border: 3px solid aqua;
+    color: white;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: aqua;
+    color: black;
+}
+
+/* .cursor-fix{
+    display: inline;
+    width: 100%;
+} */
+  /* Add more styling as needed */
+

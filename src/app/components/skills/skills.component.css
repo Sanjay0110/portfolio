@@ -1,0 +1,78 @@
+.parent{
+    margin: 0% 1% 0% 2%;
+}
+
+.parent-left{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+/* .languages-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 5px; 
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.cards-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* overflow-x: auto; */
+    /* white-space: nowrap; */
+}
+
+.card {
+    width: 300px; /* Set the desired width for your cards */
+    margin: 10px;
+    border: 1px solid rgba(9, 9, 9, 0.371);
+    border-radius: 8px;
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    background-color: rgba(9, 9, 9, 0.371);
+    color: rgba(255, 255, 255, 0.781); 
+    box-shadow: 0px 2px 150px black;
+    transition: 0.3s;
+}
+
+.card-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.row{
+    margin-top: 5px;
+}
+
+.skill-container-thickborder{
+    font-size: 14px;
+    color:rgba(255, 255, 255, 0.781);
+    border: 2px solid rgba(255, 255, 255, 0.781);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.skill-container-thinborder{
+    font-size: 14px;
+    color:rgba(255, 255, 255, 0.781);
+    border: 0.5px solid rgba(255, 255, 255, 0.781);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.skill-container-thickborder:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.skill-container-thinborder:hover{
+    background-color: aqua;
+    color: black;
+}

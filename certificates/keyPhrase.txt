@@ -1,0 +1,3 @@
+Portfolio Website
+
+ng serve --ssl --ssl-key ./certificates/key-without-passphrase.pem --ssl-cert ./certificates/cert.pem

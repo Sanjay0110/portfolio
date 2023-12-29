@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="form-text">
+        <h1>hi!</h1>
+        <h1>Have a Project in</h1>
+        <h1> mind?</h1>
+        <p>Let's discuss what we can achieve together🤟.</p>
+        <div class="socialmedia-container">
+            <a href="https://www.linkedin.com/in/sanjayy10/" target="_blank">
+                <img src="../../../assets/linkedIn_logo.svg" alt="linkedin_profile">
+            </a>
+            <a href="https://github.com/Sanjay0110" target="_blank">
+                <img src="../../../assets/github_logo.svg" alt="github_profile">
+            </a>
+            <a href="https://www.instagram.com/sanjayy.10/" target="_blank">
+                <img src="../../../assets/instagram_logo.svg" alt="instagram_profile">
+            </a>
+        </div>
+    </div>
+    <div class="form-container">
+        <h1>Send me a message 🚀</h1>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" formControlName="name" placeholder="Full name*">
+            <div id="error-text" *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
+            Name is required
+            </div>
+            <div id="error-text" *ngIf="contactForm.get('name')?.hasError('minlength') && contactForm.get('name')?.touched">
+            Name must be at least 3 characters
+            </div>
+        
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" formControlName="email" placeholder="Email address*">
+            <div id="error-text" *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+            Email is required
+            </div>
+            <div id="error-text" *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
+            Please enter a valid email address
+            </div>
+
+            <input type="text" id="subject" formControlName="subject" placeholder="Subject">
+
+            <label for="moreDetails">Tell me more about your project*</label>
+            <textarea type="text" id="moreDetails" formControlName="moreDetails" rows="7"></textarea>
+        
+            <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+        </form>
+    </div>
+</div>
